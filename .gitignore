@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# build output (regenerate with `npm run build`)
+dist/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# env
+.env
+.env.*
+.vercel
+
+# full-res photo backups (working copies in photos/ are what the app uses)
+photos/originals/

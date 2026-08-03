@@ -1026,6 +1026,9 @@ function resize(){
   buildSprites();
   buildScene();
   if (reduceMotion){ drawFinal(); return; }
+  // A held static finale (reduced-motion or ?pick preview) has no rAF loop to
+  // repaint it — redraw so it always fills the resized canvas.
+  if (window.bdayDone && !treeRAF){ drawFinal(); return; }
   if (played && filmTL){
     const at = filmTL.time(); const active = filmTL.isActive();
     filmTL = buildFilm(shotGeom());

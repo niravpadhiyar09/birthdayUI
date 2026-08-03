@@ -1,0 +1,18 @@
+- generic [active] [ref=f10e1]:
+  - main [ref=f10e2]:
+    - img "A blossom tree grows and blooms into a heart made of petals" [ref=f10e3]
+    - generic:
+      - paragraph: and… make it count
+      - generic:
+        - heading [level=1]: Happy Birthday, nisha
+        - text: ✦
+      - paragraph: you are my whole world, today and always
+      - paragraph: with love, Nivid
+    - button "Share" [ref=f10e4] [cursor=pointer]
+    - button "Again" [ref=f10e9] [cursor=pointer]
+    - generic:
+      - figure
+      - figure
+      - figure
+      - figure
+  - paragraph [ref=f10e12]: Happy Birthday, nisha. you are my whole world, today and always With love, Nivid.

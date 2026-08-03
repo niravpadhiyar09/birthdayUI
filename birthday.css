@@ -383,6 +383,9 @@ body{
   clip-path:inset(0 100% -28% -10%);
   transform-origin:8% 60%;             /* breathe from the start of the line */
 }
+/* the recipient's name drops to its own line so it can't run off the edge,
+   no matter how wide the screen or how long the name */
+.wish__name{ display:block; line-height:.92; margin-top:-.06em; }
 .wish__rule{
   display:block; width:clamp(46px, 13vw, 110px); height:2px;
   margin:.12em 0 .48em;

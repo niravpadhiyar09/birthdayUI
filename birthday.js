@@ -900,7 +900,7 @@ function resetAll(){
    them by name. All state lives in the URL (?to=&from=&msg=), reusing
    the same URLSearchParams the recorder already leans on.
    ============================================================ */
-const wHero  = $('wHero');
+const wName  = $('wName');
 const wSub   = $('wSub');
 const wFrom  = $('wFrom');
 const srLine = document.querySelector('.sr-only');
@@ -923,7 +923,7 @@ const card = {
    simply animate the personalised copy. */
 function applyCard(c){
   eyebrow.textContent = `a little something, for ${c.to}`;
-  wHero.textContent   = `Happy Birthday, ${c.to}`;
+  wName.textContent   = c.to;   // the "Happy Birthday," is static in the markup
   if (c.msg) wSub.textContent = c.msg;         // else keep the default closing line
   if (c.from){ wFrom.textContent = `with love, ${c.from}`; wFrom.hidden = false; }
   else       { wFrom.hidden = true; }

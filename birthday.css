@@ -332,7 +332,7 @@ body{
 .wish{
   position:absolute;
   left:5.5%; bottom:10%;
-  max-width:46%;
+  max-width:56%;
   z-index:6;
   pointer-events:none;
   color:var(--ink);
@@ -369,7 +369,7 @@ body{
 }
 .wish__hero{
   font-family:"Great Vibes", cursive; font-weight:400;
-  font-size:clamp(40px, 9.6vw, 86px);
+  font-size:clamp(34px, 7.1vw, 74px);
   line-height:.98; margin:-.02em 0 .06em;
   /* one consistent rose, top-lit — every letter reads the same (no per-glyph
      colour shift, which is what made the old rose→gold version look messy).
@@ -506,7 +506,7 @@ body{
 
 /* --- TREE: cut-outs blooming among the branches, gently swaying --- */
 .mode-tree .photo{
-  width:clamp(128px, 27vmin, 300px);
+  width:clamp(166px, 35vmin, 390px);
   transform:translateY(28px) scale(.9);
   transition:opacity 1s ease, transform 1.2s var(--ease-out);
   filter:drop-shadow(0 12px 24px rgba(120,20,50,.42)) drop-shadow(0 0 16px rgba(255,182,140,.5));
@@ -517,8 +517,8 @@ body{
    down the right. Overlapping the blossoms is intended; overlapping text isn't. */
 .mode-tree .photo--0{ left:4%;   top:8%;     transition-delay:.05s; }
 .mode-tree .photo--1{ right:4%;  top:6%;     transition-delay:.18s; }
-.mode-tree .photo--2{ right:4%;  top:36%;    width:clamp(112px,23vmin,250px); transition-delay:.30s; }
-.mode-tree .photo--3{ right:7%;  bottom:16%; width:clamp(112px,23vmin,250px); transition-delay:.42s; }
+.mode-tree .photo--2{ right:4%;  top:36%;    width:clamp(146px,30vmin,325px); transition-delay:.30s; }
+.mode-tree .photo--3{ right:7%;  bottom:16%; width:clamp(146px,30vmin,325px); transition-delay:.42s; }
 .mode-tree .photo--1 img{ animation-duration:7s; animation-delay:-2s; }
 .mode-tree .photo--2 img{ animation-duration:6.6s; animation-delay:-1s; }
 .mode-tree .photo--3 img{ animation-duration:7.4s; animation-delay:-3s; }

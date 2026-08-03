@@ -524,6 +524,17 @@ body{
 .mode-tree .photo--3 img{ animation-duration:7.4s; animation-delay:-3s; }
 @keyframes photoSway{ 0%,100%{ transform:rotate(-1.6deg) translateY(0); } 50%{ transform:rotate(1.6deg) translateY(-5px); } }
 
+/* PHONES (portrait): the desktop spread puts photos over the wish + buttons.
+   Here, keep all four in the upper half flanking the heart, so the lower half
+   stays clear for the message and the Share/Again buttons. */
+@media (max-width: 760px){
+  .mode-tree .photo{ width:clamp(96px, 26vw, 150px); }
+  .mode-tree .photo--0{ left:2%;   top:8%;   right:auto; bottom:auto; }
+  .mode-tree .photo--1{ right:2%;  top:8%;   left:auto;  bottom:auto; }
+  .mode-tree .photo--2{ left:2%;   top:30%;  right:auto; bottom:auto; width:clamp(88px, 24vw, 138px); }
+  .mode-tree .photo--3{ right:2%;  top:30%;  left:auto;  bottom:auto; width:clamp(88px, 24vw, 138px); }
+}
+
 @media (prefers-reduced-motion: reduce){
   .photo{ transition:none; }
   .mode-tree .photo img{ animation:none; }

@@ -506,7 +506,7 @@ body{
 
 /* --- TREE: cut-outs blooming among the branches, gently swaying --- */
 .mode-tree .photo{
-  width:clamp(166px, 35vmin, 390px);
+  width:clamp(150px, 30vmin, 330px);
   transform:translateY(28px) scale(.9);
   transition:opacity 1s ease, transform 1.2s var(--ease-out);
   filter:drop-shadow(0 12px 24px rgba(120,20,50,.42)) drop-shadow(0 0 16px rgba(255,182,140,.5));
@@ -515,10 +515,10 @@ body{
 .mode-tree .photo img{ transform-origin:center bottom; animation:photoSway 6s ease-in-out infinite; }
 /* placed clear of the wish (which anchors lower-left): one above it, three
    down the right. Overlapping the blossoms is intended; overlapping text isn't. */
-.mode-tree .photo--0{ left:4%;   top:8%;     transition-delay:.05s; }
-.mode-tree .photo--1{ right:4%;  top:6%;     transition-delay:.18s; }
-.mode-tree .photo--2{ right:4%;  top:36%;    width:clamp(146px,30vmin,325px); transition-delay:.30s; }
-.mode-tree .photo--3{ right:7%;  bottom:16%; width:clamp(146px,30vmin,325px); transition-delay:.42s; }
+.mode-tree .photo--0{ left:3%;   top:6%;     transition-delay:.05s; }
+.mode-tree .photo--1{ right:3%;  top:6%;     transition-delay:.18s; }
+.mode-tree .photo--2{ right:3%;  bottom:10%; width:clamp(150px,30vmin,330px); transition-delay:.30s; }
+.mode-tree .photo--3{ left:45%;  bottom:4%;  width:clamp(150px,30vmin,330px); transition-delay:.42s; }
 .mode-tree .photo--1 img{ animation-duration:7s; animation-delay:-2s; }
 .mode-tree .photo--2 img{ animation-duration:6.6s; animation-delay:-1s; }
 .mode-tree .photo--3 img{ animation-duration:7.4s; animation-delay:-3s; }

@@ -112,6 +112,8 @@ body{
   aspect-ratio:100/92;
   will-change:transform;
   transform-origin:50% 60%;
+  pointer-events:auto;   /* tappable — a tap on the heart fires the arrow */
+  cursor:pointer;
 }
 .target__heart{ position:absolute; inset:0; display:block; }
 

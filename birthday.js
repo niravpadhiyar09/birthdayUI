@@ -850,6 +850,13 @@ archery.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); autoFire(); }
 });
 
+/* Forgiving triggers: most people tap the heart (not the bow). A tap on the
+   heart fires the arrow, and if nobody interacts we auto-play after a beat so
+   the film always runs. */
+target.addEventListener('pointerup', (e) => { e.preventDefault(); if (!played) autoFire(); });
+let idleFire = 0;
+function armIdleFire(){ clearTimeout(idleFire); idleFire = setTimeout(() => { if (!played) autoFire(); }, 7000); }
+
 /* boot Act 1: reveal the target + bow + hint, then start the beat */
 function enter(){
   gsap.set(hero, { autoAlpha: 1 });
@@ -867,6 +874,7 @@ function enter(){
     .to(archery,  { opacity: 1, scale: 1, duration: 0.8, ease: 'power3.out' }, 0.28)
     .to(eyebrow,  { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0.4)
     .to(hint,     { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0.7);
+  armIdleFire();
 }
 
 function armReplay(){

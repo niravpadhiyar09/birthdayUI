@@ -991,7 +991,7 @@ function placeholderPhoto(i){
   return 'data:image/svg+xml,' + encodeURIComponent(svg);
 }
 if (!PHOTOS.length) PHOTOS = [0, 1, 2, 3].map(placeholderPhoto);
-PHOTOS = PHOTOS.slice(0, 4);   // four spots in the tree
+PHOTOS = PHOTOS.slice(0, 5);   // up to five spots in the tree
 
 const photosOff = (params.get('photos') || '').toLowerCase() === 'off';
 const photosEl  = $('photos');
